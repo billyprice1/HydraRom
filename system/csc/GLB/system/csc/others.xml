@@ -1,0 +1,36 @@
+﻿<?xml  version="1.0" encoding="UTF-8" ?>
+<SamsungMobileFeature>
+  <Version>ED00003</Version>
+  <Country>PHILIPPINES</Country>
+  <CountryISO>PH</CountryISO>
+  <SalesCode>GLB</SalesCode>
+  <FeatureSet>
+    <CscFeature_Common_ConfigSvcProviderForUnknownNumber>whitepages,whitepages,whitepages</CscFeature_Common_ConfigSvcProviderForUnknownNumber>
+    <CscFeature_Common_DisablePhoneNumberFormatting>TRUE</CscFeature_Common_DisablePhoneNumberFormatting>
+    <CscFeature_Contact_IgnoreSpaceDuringSearch>TRUE</CscFeature_Contact_IgnoreSpaceDuringSearch>
+    <CscFeature_FMRadio_DefaultChannelAs>88.3</CscFeature_FMRadio_DefaultChannelAs>
+    <CscFeature_FMRadio_FrequencySpaceAs>100</CscFeature_FMRadio_FrequencySpaceAs>
+    <CscFeature_Framework_EnableBidirection>TRUE</CscFeature_Framework_EnableBidirection>
+    <CscFeature_Framework_EnableThaiVietReshaping>TRUE</CscFeature_Framework_EnableThaiVietReshaping>
+    <CscFeature_Framework_ReplaceDataTypeIconAsOpBrand>GLOBE</CscFeature_Framework_ReplaceDataTypeIconAsOpBrand>
+    <CscFeature_Framework_SupportDataModeSwitchGlobalAction>TRUE</CscFeature_Framework_SupportDataModeSwitchGlobalAction>
+    <CscFeature_LockScreen_EnableOperatorWallpaper>TRUE</CscFeature_LockScreen_EnableOperatorWallpaper>
+    <CscFeature_RIL_ConfigSTKNameLength>30</CscFeature_RIL_ConfigSTKNameLength>
+    <CscFeature_RIL_ConfigSimLock>AddDataLock</CscFeature_RIL_ConfigSimLock>
+    <CscFeature_RIL_ConfigWhiteListMccmncForDataUse>51502</CscFeature_RIL_ConfigWhiteListMccmncForDataUse>
+    <CscFeature_RIL_Display4gPlusIconBandwidth>14</CscFeature_RIL_Display4gPlusIconBandwidth>
+    <CscFeature_RIL_EnableLaunchBrowser>TRUE</CscFeature_RIL_EnableLaunchBrowser>
+    <CscFeature_RIL_ForceConnectMMS>TRUE</CscFeature_RIL_ForceConnectMMS>
+    <CscFeature_RIL_IgnoreNitzNetworkName>TRUE</CscFeature_RIL_IgnoreNitzNetworkName>
+    <CscFeature_SNote_AddOnFontConfig>SEA</CscFeature_SNote_AddOnFontConfig>
+    <CscFeature_Setting_CustNetworkSelMenu4>OLB</CscFeature_Setting_CustNetworkSelMenu4>
+    <CscFeature_Setting_IncludeApn4SwUpdate>TRUE</CscFeature_Setting_IncludeApn4SwUpdate>
+    <CscFeature_Sip_LangQwertyType4HwKey>HW_KEYBOARD_COUNTRY_TYPE_PHILIPPINE</CscFeature_Sip_LangQwertyType4HwKey>
+    <CscFeature_SmartManager_ConfigSubFeatures>roguepopup|autoclean|autorestart</CscFeature_SmartManager_ConfigSubFeatures>
+    <CscFeature_VoiceCall_ConfigOpStyleForNetworkSetting>ManualSearchForSun</CscFeature_VoiceCall_ConfigOpStyleForNetworkSetting>
+    <CscFeature_Web_ConfigSyncSource>TRUE</CscFeature_Web_ConfigSyncSource>
+    <CscFeature_Web_EnableAutoSimHomeUrlInProfile>TRUE</CscFeature_Web_EnableAutoSimHomeUrlInProfile>
+    <CscFeature_Web_SetHomepageURL>http://www.globe.com.ph</CscFeature_Web_SetHomepageURL>
+    <CscFeature_Web_SetUAProfile>http://wap.samsungmobile.com/uaprof/uaprof.rdf</CscFeature_Web_SetUAProfile>
+  </FeatureSet>
+</SamsungMobileFeature>

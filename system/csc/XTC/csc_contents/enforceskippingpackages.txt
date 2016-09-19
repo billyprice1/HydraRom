@@ -1,0 +1,12 @@
+11
+GalaxyCare.apk
+NaverV.apk
+SamsungPayStub.apk
+AndroidPay.apk
+imsservice.apk
+ImsSettings.apk
+ImsLogger+.apk
+ImsTelephonyService.apk
+OMCAgent.apk
+AxelSpringer.apk
+Chat.apk

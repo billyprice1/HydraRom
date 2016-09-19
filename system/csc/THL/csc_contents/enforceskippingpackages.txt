@@ -1,0 +1,9 @@
+8
+GalaxyCare.apk
+NaverV.apk
+CnnPanel.apk
+SamsungPayStub.apk
+AndroidPay.apk
+OMCAgent.apk
+AxelSpringer.apk
+Chat.apk

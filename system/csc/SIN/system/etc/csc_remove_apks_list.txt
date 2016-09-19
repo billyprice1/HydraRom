@@ -1,0 +1,4 @@
+/system/app/Galaxy_gift-release-preload_27062016/Galaxy_gift-release-preload_27062016.apk
+/system/app/QuaTangGalaxyStub/QuaTangGalaxyStub.apk
+/system/app/Samsung321_v1.9.2-release/Samsung321_v1.9.2-release.apk
+/system/priv-app/IPsecService/IPsecService.apk

@@ -1,0 +1,4 @@
+/hidden/app/com.seerlabs.Gservices.apk
+/hidden/app/GL_stub_SDK23_rev2.apk
+/hidden/app/mySamsung_v1.9_Final_220616.apk
+/hidden/app/smarttutor_b160.apk

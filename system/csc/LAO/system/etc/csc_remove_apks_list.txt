@@ -1,0 +1,4 @@
+/system/app/QuaTangGalaxyStub/QuaTangGalaxyStub.apk
+/system/app/Samsung321_v1.9.2-release/Samsung321_v1.9.2-release.apk
+/system/priv-app/Ignite-Singtel_1.7.306_releaseProduction/Ignite-Singtel_1.7.306_releaseProduction.apk
+/system/priv-app/IPsecService/IPsecService.apk
