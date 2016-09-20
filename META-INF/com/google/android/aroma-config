@@ -1,0 +1,389 @@
+﻿##
+# Fix Colorspace Issue
+# You can use one of following values:
+#   "rgba", "abgr", "argb", "bgra"
+
+ini_set("force_colorspace","rgba");
+
+##
+# Initializing Information
+#
+
+ini_set("rom_name",             "HydraRom™ ");
+ini_set("rom_version",          "V1.2");
+ini_set("rom_author",           "Tkkg1994");
+ini_set("rom_device",           "SM-N930F");
+ini_set("rom_date",             "05.09.2016");
+
+##
+# Show Simple Splash
+#
+splash(
+#  #-- Duration 2000ms / 2 seconds
+    2000,
+  
+  #-- <AROMA Resource Dir>/sample.png
+    "sample"
+);
+
+##
+# Font and Theme Selection
+#
+
+fontresload( "0", "ttf/Roboto-Regular.ttf;ttf/DroidSansArabic.ttf;ttf/DroidSansFallback.ttf;", "12" ); #-- Use sets of font (Font Family)
+theme("miui4");
+
+loadlang("langs/en.lang");
+fontresload( "0", "ttf/Roboto-Regular.ttf", "12" ); #-- "0" = Small Font ( Look at Fonts & UNICODE Demo Below )
+fontresload( "1", "ttf/Roboto-Regular.ttf", "18" ); #-- "1" = Big Font
+
+##
+#   SHOW ROM/Mod INFORMATION
+#
+
+viewbox(
+  #-- Title
+    "<~welcome.title>",
+  
+  #-- Text
+    "<~welcome.text1> <b>"+
+	  #-- Get Config Value
+	  ini_get("rom_name")+
+	"</b> <~common.for> <b>"+ini_get("rom_device")+"</b>.\n\n"+
+    
+    "<~welcome.text2>\n\n"+
+	
+      "  <~welcome.version>\t: <b><#selectbg_g>"+ini_get("rom_version")+"</#></b>\n"+
+      "  <~welcome.updated>\t: <b><#selectbg_g>"+ini_get("rom_date")+"</#></b>\n\n\n"+
+
+    "<~welcome.next>",
+  
+  #-- Icon
+    "@welcome"
+);
+
+##
+# LICENSE
+#
+
+agreebox(
+  #-- Title
+    "HydraRom™",
+  
+  #-- Subtitle / Description
+    "Read Carefully",
+  
+  #-- Icon:
+    "@license",
+  
+  #-- Text Content 
+    resread("license.txt"),
+  
+  #-- Checkbox Text
+    "Have you really read it and are agree?",
+  
+  #-- Unchecked Alert Message
+    "You've to agree!"
+);
+
+##
+# MAIN MENU- INSTALLER n MISC
+#
+menubox(
+  #-- Title
+    "HydraRom™ Menu",
+  
+  #-- Sub Title
+    "Please select from the Menu Below to Modify the required features",
+  
+  #-- Icon
+    "@apps",
+    
+  #-- Will be saved in /tmp/aroma/menu.prop
+    "menu.prop",
+    
+     #-------------------------+-----------------[ Menubox Items ]-------------------------+---------------#
+     # TITLE                   |  SUBTITLE                                                 |   Item Icons  #
+     #-------------------------+-----------------------------------------------------------+---------------#	
+	
+	"Installation",		"ROM Installation with Various Features - RECOMMENDED",      "@install",      #-- selected = 1
+	"System Info",		"Get and show device/partition informations",                "@info",         #-- selected = 2
+	"ChangeLog",		"HydraRom ChangeLog",                                         "@agreement",    #-- selected = 3
+	"Quit Install",		"Leaving the Aroma setup to install another Rom :(",     "@install"       #-- selected = 4
+
+);
+
+##
+# System Info 
+#
+
+if prop("menu.prop","selected")=="2" then
+
+  #-- Show Please Wait
+  pleasewait("Getting System Information...");
+
+  #-- Fetch System Information
+  setvar(
+    #-- Variable Name
+      "sysinfo",
+    
+    #-- Variable Value
+      "<@center><b>Your Device System Information</b></@>\n\n"+
+      
+      "Device Name\t\t: <#469>Galaxy Note 7</#>\n"+
+      "Board Name\t\t: <#469>SM-N930F</#>\n"+
+      "Manufacturer\t\t: <#469>Samsung</#>\n"+
+	  
+	  "\n"+
+	  
+      "System Size\t\t: <b><#selectbg_g>"+getdisksize("/system","m")+" MB</#></b>\n"+
+        "\tFree\t\t: <b><#selectbg_g>"+getdiskfree("/system","m")+" MB</#></b>\n\n"+
+      "Data Size\t\t: <b><#selectbg_g>"+getdisksize("/data","m")+" MB</#></b>\n"+
+        "\tFree\t\t: <b><#selectbg_g>"+getdiskfree("/data","m")+" MB</#></b>\n\n"+
+      "SDCard Size\t\t: <b><#selectbg_g>"+getdisksize("/sdcard","m")+" MB</#></b>\n"+
+        "\tFree\t\t: <b><#selectbg_g>"+getdiskfree("/sdcard","m")+" MB</#></b>\n\n"+
+
+      ""
+  );
+  
+  #-- Show Textbox
+  textbox(
+    #-- Title
+      "System Information",
+    
+    #-- Subtitle
+      "Current system Information on your Note 7",
+    
+    #-- Icon
+      "@info",
+    
+    #-- Text
+      getvar("sysinfo")
+  );
+  
+  #-- Show Alert
+  alert(
+    #-- Alert Title
+      "Finished",
+    
+    #-- Alert Text
+      "You will be back to Menu",
+    
+    #-- Alert Icon
+      "@alert"
+  );
+  
+  #-- Back to Menu ( 2 Wizard UI to Back )
+  back("2");
+  
+endif;
+
+##
+# CHANGELOG DISPLAY
+#
+
+if prop("menu.prop","selected")=="3" then
+
+    #-- TextDialog 
+ textdialog(
+    #-- Title
+    "HydraRom Changelog",
+	#-- Text
+    resread("changelog.txt"),
+    #-- Custom OK Button Text (Optional)
+    "Close"
+ );
+ 
+  #-- Back to Menu ( 2 Wizard UI to Back )
+  back("1");
+  
+endif;
+
+##
+# QUIT INSTALLER
+#
+
+if prop("menu.prop","selected")=="4" then
+
+#-- Exit
+	if
+	  confirm(
+		#-- Title
+		  "Exit",
+		#-- Text
+		  "Are you sure want to exit the Installer?",
+		#-- Icon (Optional)
+		  "@alert"
+	  )=="yes"
+	then
+	  #-- Exit 
+	  exit("");
+	endif;
+
+endif;
+
+
+##
+#  Select Type of Install
+#
+
+if prop("menu.prop","selected")=="1" then
+
+alert( "Alert", "Choosing stock kernel will encrypt your phone on startup and shealth will not work. With hydra instead all this works, force encryption disabled too! But you need to make a full wipe when switching kernels. In adition, stock kernel does not work with magisk and all its modules!");
+
+##
+# Variant Form
+#
+
+form(
+    "Kernel/variant",
+    "Choose your kernel and variant here",
+    "@default",
+    "variant.prop",
+  
+	  #----------------------------------[ Selectbox With Groups ]-----------------------------------#
+	  # TITLE            |  SUBTITLE                                                 | Initial Value #
+	  #------------------+-----------------------------------------------------------+---------------#  
+
+	"variant",	"Variant",		"",								"group",
+	"g930f",	"SM-G930F",		"Will install S7 flat files and kernel",			"select.selected",
+	"g935f",	"SM-G935F",		"Will install S7 edge files and kernel",			"select",
+	"n930f",	"SM-N930F",		"Will install N7 files select kernel below",			"select",
+	"kernel",	"Kernel N7", 		"",								"group",
+	"stock",	"Stock SM-N930F",	"Installs stock kernel for N7",					"select",
+	"hydra",	"IronStock SM-T800",	"Installs HydraKernel for N7",					"select.selected"
+);
+
+form(
+    "Root/Magisk",
+    "You can choose many things here, read carefully:",
+    "@default",
+    "magisk.prop",
+  #
+  # Type:
+  #  - group              = Group
+  #  - select             = Select Item
+  #  - select.selected    = Selected Select Item
+  #  - check              = Checkbox Item
+  #  - check.checked      = Checked Checkbox Item
+  #  - hide               = Hidden
+  #
+  #-------------+-----------------------[ Selectbox Without Group ]------------------------------#
+  # PROP ID     | TITLE            |  SUBTITLE                                   |    Type       #
+  #-------------+--------+-------------------------------------------------------+---------------#
+	"magisk",	"Magisk",	"Magisk and its modules do only work on hydra kernel!!",		"group",
+	"yes",		"Yes",		"Will install magisk",							"select.selected",
+	"no",		"No",		"Will not install magisk",						"select",
+	"root",		"Root method", 	"Magisk does only work with phh's superuser at the moment!",		"group",
+	"su",		"SuperSU",	"Will install SuperSU 2.77, NOT compatible with magisk",		"select",
+	"phh",		"PHH's superuser","Will install phh's superuser which is compatible with magisk",	"select.selected",
+	"no",		"No root",	"Nothing will be installed",						"select",
+	"busybox",	"Busybox", 	"Choose between magisk or non magisk busybox",				"group",
+	"bbn",		"Busybox without magisk",	"Will install busybox without magisk compatibility",	"select",
+	"bby",		"Busybox with magisk","Will install busybox with magisk compatibility",			"select.selected",
+	"no",		"No busybox",	"Nothing will be installed",						"select",
+	"modules",	"Magisk modules","Choose which magisk modules you want to install",			"group",
+	"xps",		"Xposed",	"Will install xposed V86.5 systemless",					"check",
+	"adb",		"AdBlocker",	"Will install magisk adblocker",					"check",
+	"v4a",		"Viper4Android","Installs Viper4Android (APK needs to be installed seperately!",	"check"
+);
+
+alert( "Alert", "Removing samsung apps can lead to force closes and not working features!");
+
+##
+# Sub Checkbox 1
+#
+
+checkbox(
+  #-- Title
+	"Debloating Options",
+	  
+  #-- Sub Title
+    "You can debloat the rom here, what you don't want, don't select it",
+	  
+  #-- Icon:
+     "icons/install",
+	 
+  #-- Will be saved in /tmp/aroma/checkbox1.prop
+	"checkbox1.prop",
+
+	  #----------------------------------[ Selectbox With Groups ]-----------------------------------#
+	  # TITLE            |  SUBTITLE                                                 | Initial Value #
+	  #------------------+-----------------------------------------------------------+---------------#  
+
+	"Samsung Apps",		"",									2,	#-- group 1
+	"Allshare",		"Allshare Cast by Samsung",						1,	#-- item.1.1
+	"ANT",			"ANT-Hal and Plugins",							1,	#-- item.1.2
+	"Note Memo",		"Memo App from Samsung",						1,	#-- item.1.3
+	"Mirrorlink",		"",									1,	#-- item.1.4
+	"SBrowser",		"Samsungs own Browser",							1,	#-- item.1.5
+	"SPlanner",		"Planner App and Widget",						1,	#-- item.1.6
+	"Video Editor",		"",									1,	#-- item.1.7
+	"Weather",		"Weather Widget",							1,	#-- item.1.8
+	"Calculator",		"",									1,	#-- item.1.9
+	"Email",		"Samsungs default Mail program",					1,	#-- item.1.10
+	"Galaxy Store",		"Samsungs own Galaxy App",						1,	#-- item.1.11
+	"Gallery",		"Samsungs Gallery App",							1,	#-- item.1.12
+	"Game",			"Samsungs Game Centre",							1,	#-- item.1.13
+	"MyFiles",		"Myfiles Application",							1,	#-- item.1.14
+	"SHealth",		"Tracks fitness and more",						1,	#-- item.1.15
+	"SVoice",		"Samsung Voice Assistant",						1,	#-- item.1.16
+	"Themestore",		"",									1,	#-- item.1.17
+	"VoiceNote",		"",									1,	#-- item.1.18
+	"SmartSwitch",		"",									0,	#-- item.1.19
+	"Gear S/ Gear VR manager", 	" Install Gear S and Gear VR manager",				1,	#-- item.1.20
+	"Microsoft Excel",	"",									0,	#-- item.1.21
+	"Microsoft PowerPoint",	"",									0,	#-- item.1.22
+	"Microsoft Word",	"",									0,	#-- item.1.23
+	"Samsung Pay",		"",									0,	#-- item.1.24
+	"Samsung Music Player",	"",									1,	#-- item.1.25
+	"Google Apps",		"",									2,	#-- group 2
+	"Google Now",		"",									0,	#-- item.2.1
+	"Android Pay",		"",									0	#-- item.2.4
+
+	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
+
+);
+
+# Installation UI
+
+ini_set("text_next", "Install Now");
+ini_set("icon_next", "@installbutton");
+  
+viewbox(
+  #-- Title
+    "Ready to Install",
+
+  #-- Text
+    "HydraRom is ready to be installed.\n\n"+
+	"Press <b>Install ROM</b> to begin the installation.\n\n"+
+	"To review or change any of your installation settings, press <b>Back</b>.\n\n"+
+	"Press Menu -> Quit Installation to quit.",
+
+  #-- Icon
+    "@install"
+);
+
+endif;
+
+##
+# INSTALLATION PROCESS
+#
+
+if prop("menu.prop","selected")== "1" 
+then
+
+ini_set("text_next", "Next");
+ini_set("icon_next", "@next");
+
+install(
+  "HydraRom™ Installation",
+  getvar("rom_name") + "\n" +
+  "Please wait while HydraRom is conquering your Note 7" +
+  "",
+  "icons/install"
+);
+
+ini_set("text_next", "Finish");
+ini_set("icon_next", "@finish");
+endif;

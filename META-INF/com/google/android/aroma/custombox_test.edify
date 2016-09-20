@@ -1,0 +1,34 @@
+﻿
+form(
+    "Root/Magisk",
+    "You can choose many things here, read carefully:",
+    "@default",
+    "form0.prop",
+  #
+  # Type:
+  #  - group              = Group
+  #  - select             = Select Item
+  #  - select.selected    = Selected Select Item
+  #  - check              = Checkbox Item
+  #  - check.checked      = Checked Checkbox Item
+  #  - hide               = Hidden
+  #
+  #-------------+-----------------------[ Selectbox Without Group ]------------------------------#
+  # PROP ID     | TITLE            |  SUBTITLE                                   |    Type       #
+  #-------------+--------+-------------------------------------------------------+---------------#
+	"magisk",	"Magisk",	"Magisk and its modules do only work on hydra kernel!!",		"group",
+	"yes",		"Yes",		"Will install magisk",							"select.selected",
+	"no",		"No",		"Will not install magisk",						"select",
+	"root",		"Root method", 	"Magisk does only work with phh's superuser at the moment!",		"group",
+	"su",		"SuperSU",	"Will install SuperSU 2.77, NOT compatible with magisk",		"select",
+	"phh",		"PHH's superuser","Will install phh's superuser which is compatible with magisk",	"select.selected",
+	"no",		"No root",	"Nothing will be installed",						"select",
+	"busybox",	"Busybox", 	"Choose between magisk or non magisk busybox",				"group",
+	"bbn",		"Busybox without magisk",	"Will install busybox without magisk compatibility",	"select",
+	"bby",		"Busybox with magisk","Will install busybox with magisk compatibility",			"select.selected",
+	"no",		"No busybox",	"Nothing will be installed",						"select",
+	"modules",	"Magisk modules","Choose which magisk modules you want to install",			"group",
+	"xps",		"Xposed",	"Will install xposed V86.5 systemless",					"check",
+	"adb",		"AdBlocker",	"Will install magisk adblocker",					"check",
+	"v4a",		"Viper4Android","Installs Viper4Android (APK needs to be installed seperately!",	"check"
+);

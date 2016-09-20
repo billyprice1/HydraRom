@@ -1,12 +1,13 @@
-#ASSERT
-assert(getprop("ro.product.device") == "gracelte" || getprop("ro.build.product") == "gracelte" || getprop("ro.product.name") == "gracelte" ||
-	abort("This package is for \"gracelte\" devices; this is a \"" + getprop("ro.product.device") + "\"."););
+if
+	file_getprop("/tmp/aroma-data/menu.prop","selected") == "1"
+	then
+		ui_print("Installing HydraRom for SM-G930F/G935F/N930F");
 unmount("/system");
+unmount("/data");
 show_progress(1.000000, 0);
 ui_print(" ");
 ui_print(" ");
 ui_print("HydraRom Installer");
-ui_print("Built with SuperR's Kitchen");
 ui_print(" ");
 ui_print(" ");
 ui_print(" ");
@@ -15,11 +16,86 @@ ui_print("Formatting system...");
 ui_print(" ");
 format("ext4", "EMMC", "/dev/block/platform/155a0000.ufs/by-name/SYSTEM", "0", "/system");
 set_progress(0.100000);
+ui_print(" ");
+ui_print("Mounting Partitions");
+ui_print(" ");
 mount("ext4", "EMMC", "/dev/block/platform/155a0000.ufs/by-name/SYSTEM", "/system");
+mount("ext4", "EMMC", "/dev/block/platform/155a0000.ufs/by-name/CACHE", "/cache");
+mount("ext4", "EMMC", "/dev/block/platform/155a0000.ufs/by-name/HIDDEN", "/preload");
+mount("ext4", "EMMC", "/dev/block/platform/155a0000.ufs/by-name/EFS", "/efs");
 set_progress(0.200000);
 ui_print("Extracting system...");
 ui_print(" ");
 package_extract_dir("system", "/system");
+#KERNEL FILES
+if
+	file_getprop("/tmp/aroma/variant.prop","variant") == "g930f"
+	then
+		ui_print("Installing SM-G930F files...");
+		package_extract_dir("hydra/variants/s7/system", "/system");
+		package_extract_dir("hydra/variants/s7/kernel/app", "/system/app");
+endif;
+if
+	file_getprop("/tmp/aroma/variant.prop","variant") == "g935f"
+	then
+		ui_print("Installing SM-G935F files...");
+		package_extract_dir("hydra/variants/s7/system", "/system");
+		package_extract_dir("hydra/variants/s7/kernel/app", "/system/app");
+endif;
+if
+	file_getprop("/tmp/aroma/variant.prop","variant") == "n930f"
+	then
+		ui_print("Installing SM-N930F files...");
+		package_extract_dir("hydra/variants/n7/system", "/system");
+if
+	file_getprop("/tmp/aroma/variant.prop","kernel") == "hydra"
+	then
+		package_extract_dir("hydra/variants/n7/kernel/hydra/system", "/system");
+endif;
+if
+	file_getprop("/tmp/aroma/variant.prop","kernel") == "stock"
+	then
+		package_extract_dir("hydra/variants/n7/kernel/stock/system", "/system");
+endif;
+endif;
+#DATA
+ui_print("Extracting data..."); ui_print(" ");
+package_extract_dir("data", "/data");
+#Magisk App
+if
+	file_getprop("/tmp/aroma/magisk.prop","magisk") == "yes"
+	then
+		ui_print("Installing Magisk App...");
+		package_extract_dir("hydra/magisk/app", "/system/app");
+endif;
+#Xposed App
+if
+	file_getprop("/tmp/aroma/magisk.prop","xps") == "1"
+	then
+		ui_print("Installing Xposed App...");
+		package_extract_dir("hydra/magisk_module/xposed/app", "/system/app");
+endif;
+#Phh App
+if
+	file_getprop("/tmp/aroma/magisk.prop","root") == "phh"
+	then
+		ui_print("Installing Phh's App...");
+		package_extract_dir("hydra/magisk_module/superuser/app", "/system/app");
+endif;
+#Busybox App
+if
+	file_getprop("/tmp/aroma/magisk.prop","busybox") == "bbn"
+	then
+		ui_print("Installing Busybox App...");
+		package_extract_dir("hydra/busybox/app", "/system/app");
+endif;
+if
+	file_getprop("/tmp/aroma/magisk.prop","busybox") == "bby"
+	then
+		ui_print("Installing Busybox App...");
+		package_extract_dir("hydra/magisk_module/busybox/app", "/system/app");
+endif;
+set_metadata_recursive("/data/app", "uid", 1000, "gid", 1000, "dmode", 0755, "fmode", 0644);
 set_progress(0.500000);
 ui_print("Creating symlinks...");
 ui_print(" ");
@@ -360,14 +436,133 @@ set_metadata("/system/bin/wldu", "selabel", "u:object_r:wldu_exec:s0");
 set_metadata("/system/lib/drm", "selabel", "u:object_r:drm_lib_system_file:s0");
 set_progress(0.700000);
 ui_print(" ");
-ui_print("Extracting boot image...");
 ui_print(" ");
-package_extract_file("boot.img", "/dev/block/platform/155a0000.ufs/by-name/BOOT");
-set_progress(0.800000);
+if
+	file_getprop("/tmp/aroma/variant.prop","variant") == "g930f"
+	then
+		ui_print("Installing SM-G930F HydraKernel...");
+		package_extract_file("hydra/variants/s7/kernel/g930fboot.img", "/dev/block/platform/155a0000.ufs/by-name/BOOT");
+		set_progress(0.800000);
+endif;
+if
+	file_getprop("/tmp/aroma/variant.prop","variant") == "g935f"
+	then
+		ui_print("Installing SM-G935F HydraKernel...");
+		package_extract_file("hydra/variants/s7/kernel/g935fboot.img", "/dev/block/platform/155a0000.ufs/by-name/BOOT");
+		set_progress(0.800000);
+endif;
+if
+	file_getprop("/tmp/aroma/variant.prop","kernel") == "hydra"
+	then
+		ui_print("Installing SM-N930F HydraKernel...");
+		package_extract_file("hydra/variants/n7/kernel/hydra/boot.img", "/dev/block/platform/155a0000.ufs/by-name/BOOT");
+		set_progress(0.800000);
+endif;
+if
+	file_getprop("/tmp/aroma/variant.prop","kernel") == "stock"
+	then
+		ui_print("Installing SM-N930F StockKernel...");
+		package_extract_file("hydra/variants/n7/kernel/stock/boot.img", "/dev/block/platform/155a0000.ufs/by-name/BOOT");
+		set_progress(0.800000);
+endif;
+#MAGISK
+if
+	file_getprop("/tmp/aroma/magisk.prop","magisk") == "yes"
+	then
+		package_extract_dir("hydra/magisk", "/temp/magisk");
+		run_program("/sbin/busybox", "unzip", "/temp/magisk/Magisk-v6.zip", "META-INF/com/google/android/*", "-d", "/temp/magisk");
+		run_program("/sbin/busybox", "sh", "/temp/magisk/META-INF/com/google/android/update-binary", "dummy", "1", "/temp/magisk/Magisk-v6.zip");
+		ui_print(" ");
+endif;
+if
+	file_getprop("/tmp/aroma/magisk.prop","magisk") == "no"
+	then
+		ui_print("No magisk installed...");
+endif;
 #ROOT
-ui_print(" ");
+if
+	file_getprop("/tmp/aroma/magisk.prop","root") == "su"
+	then
+		package_extract_dir("hydra/supersu", "/tmp/supersu");
+		run_program("/sbin/busybox", "unzip", "/tmp/supersu/SR1-SuperSU-v2.78-SR1.zip", "META-INF/com/google/android/*", "-d", "/tmp/supersu");
+		run_program("/sbin/busybox", "sh", "/tmp/supersu/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/supersu/SR1-SuperSU-v2.78-SR1.zip");
+		ui_print(" ");
+#SUD
+		set_metadata_recursive("/system/su.d", "uid", 0, "gid", 0, "dmode", 0700, "fmode", 0700, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
+endif;
+if
+	file_getprop("/tmp/aroma/magisk.prop","root") == "phh"
+	then
+		package_extract_dir("hydra/magisk_module/superuser", "/temp/superuser");
+		run_program("/sbin/busybox", "unzip", "/temp/superuser/phh-superuser-17-magisk.zip", "META-INF/com/google/android/*", "-d", "/temp/superuser");
+		run_program("/sbin/busybox", "sh", "/temp/superuser/META-INF/com/google/android/update-binary", "dummy", "1", "/temp/superuser/phh-superuser-17-magisk.zip");
+		ui_print(" ");
+endif;
+if
+	file_getprop("/tmp/aroma/magisk.prop","root") == "no"
+	then
+		ui_print("No root installed...");
+endif;
 #BUSYBOX
+if
+	file_getprop("/tmp/aroma/magisk.prop","busybox") == "bbn"
+	then
+		package_extract_dir("hydra/busybox", "/tmp/busybox");
+		run_program("/sbin/busybox", "unzip", "/tmp/busybox/UPDATE-Busybox.Installer.v1.24.2-ALL-signed.zip", "META-INF/com/google/android/*", "-d", "/tmp/busybox");
+		run_program("/sbin/busybox", "sh", "/tmp/busybox/META-INF/com/google/android/update-binary", "dummy", "1", "/tmp/busybox/UPDATE-Busybox.Installer.v1.24.2-ALL-signed.zip");
+endif;
+if
+	file_getprop("/tmp/aroma/magisk.prop","busybox") == "bby"
+	then
+		package_extract_dir("hydra/magisk_module/busybox", "/temp/busybox");
+		run_program("/sbin/busybox", "unzip", "/temp/busybox/BusyBox-Magisk-1.25.zip", "META-INF/com/google/android/*", "-d", "/temp/busybox");
+		run_program("/sbin/busybox", "sh", "/temp/busybox/META-INF/com/google/android/update-binary", "dummy", "1", "/temp/busybox/BusyBox-Magisk-1.25.zip");
+endif;
+if
+	file_getprop("/tmp/aroma/magisk.prop","busybox") == "no"
+	then
+		ui_print("No busybox installed...");
+endif;
+#XPOSED
+if
+	file_getprop("/tmp/aroma/magisk.prop","xps") == "1"
+	then
+		package_extract_dir("hydra/magisk_module/xposed", "/temp/xposed");
+		run_program("/sbin/busybox", "unzip", "/temp/xposed/xposed-v86.5-sdk23-systemless.zip", "META-INF/com/google/android/*", "-d", "/temp/xposed");
+		run_program("/sbin/busybox", "sh", "/temp/xposed/META-INF/com/google/android/update-binary", "dummy", "1", "/temp/xposed/xposed-v86.5-sdk23-systemless.zip");
+		ui_print(" ");
+endif;
+if
+	file_getprop("/tmp/aroma/magisk.prop","xps") == "0"
+	then
+		ui_print("No xposed installed...");
+endif;
+if
+	file_getprop("/tmp/aroma/magisk.prop","adb") == "1"
+	then
+		package_extract_dir("hydra/magisk_module/adblocker", "/temp/adblocker");
+		run_program("/sbin/busybox", "unzip", "/temp/adblocker/Ad-Block-Magisk.zip", "META-INF/com/google/android/*", "-d", "/temp/adblocker");
+		run_program("/sbin/busybox", "sh", "/temp/adblocker/META-INF/com/google/android/update-binary", "dummy", "1", "/temp/adblocker/Ad-Block-Magisk.zip");
+		ui_print(" ");
+endif;
+if
+	file_getprop("/tmp/aroma/magisk.prop","v4a") == "1"
+	then
+		package_extract_dir("hydra/magisk_module/viper4android", "/temp/viper4android");
+		run_program("/sbin/busybox", "unzip", "/temp/viper4android/V4A-Magisk-Dark.zip", "META-INF/com/google/android/*", "-d", "/temp/viper4android");
+		run_program("/sbin/busybox", "sh", "/temp/viper4android/META-INF/com/google/android/update-binary", "dummy", "1", "/temp/viper4android/V4A-Magisk-Dark.zip");
+		ui_print(" ");
+endif;
+delete_recursive("/tmp");
+delete_recursive("/temp");
 set_progress(0.900000);
 unmount("/system");
+unmount("/cache");
+unmount("/preload");
+unmount("/efs");
 set_progress(1.000000);
 ui_print("HydraRom Installed");
+
+endif;
+
+ui_print("Please Reboot now");
