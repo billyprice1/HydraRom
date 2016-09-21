@@ -1,2 +1,0 @@
-/system/app/Galaxy_gift-release-preload_27062016/Galaxy_gift-release-preload_27062016.apk
-/system/priv-app/IPsecService/IPsecService.apk

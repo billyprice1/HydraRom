@@ -1,8 +1,0 @@
-7
-GalaxyCare.apk
-NaverV.apk
-CnnPanel.apk
-AndroidPay.apk
-OMCAgent.apk
-AxelSpringer.apk
-Chat.apk
