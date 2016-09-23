@@ -229,8 +229,6 @@ endif;
 
 if prop("menu.prop","selected")=="1" then
 
-alert( "Alert", "Choosing stock kernel will encrypt your phone on startup and shealth will not work. With hydra instead all this works, force encryption disabled too! But you need to make a full wipe when switching kernels. In adition, stock kernel does not work with magisk and all its modules!");
-
 ##
 # Variant Form
 #
@@ -251,7 +249,8 @@ form(
 	"n930f",	"SM-N930F",		"Will install N7 files select kernel below",			"select",
 	"kernel",	"Kernel N7", 		"",								"group",
 	"stock",	"Stock SM-N930F",	"Installs stock kernel for N7",					"select",
-	"hydra",	"IronStock SM-T800",	"Installs HydraKernel for N7",					"select.selected"
+	"hydra",	"HydraKernel SM-N930F",	"Installs HydraKernel for N7",					"select.selected",
+	"no",		"G930F/G935F",		"I am on S7 and don't need an aditional kernel",		"select"
 );
 
 form(
