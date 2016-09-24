@@ -10,8 +10,8 @@ ini_set("force_colorspace","rgba");
 #
 
 ini_set("rom_name",             "HydraRom™ ");
-ini_set("rom_version",          "V1.2");
-ini_set("rom_author",           "Tkkg1994");
+ini_set("rom_version",          "V1.3");
+ini_set("rom_author",           "Tkkg1994, Gayos24");
 ini_set("rom_device",           "SM-N930F");
 ini_set("rom_date",             "05.09.2016");
 
