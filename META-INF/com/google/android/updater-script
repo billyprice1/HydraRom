@@ -71,6 +71,181 @@ if
 		ui_print("Installing IOS emoji...");
 		package_extract_dir("aroma/emoji/IOS/system", "/system");
 endif;
+#-- Debloat
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.1") == "1"
+	then
+		ui_print("Installing Allshare...");
+		package_extract_dir("hydra/debloat/Allshare", "/system/app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.2") == "1"
+	then
+		ui_print("Installing ANT...");
+		package_extract_dir("hydra/debloat/ANT", "/system/app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.3") == "1"
+	then
+		ui_print("Installing Memo...");
+		package_extract_dir("hydra/debloat/Memo", "/system/app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.4") == "1"
+	then
+		ui_print("Installing Mirrorlink...");
+		package_extract_dir("hydra/debloat/MirrorLink", "/system/app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.5") == "1"
+	then
+		ui_print("Installing SBrowser...");
+		package_extract_dir("hydra/debloat/SBrowser", "/system/app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.6") == "1"
+	then
+		ui_print("Installing SPlanner...");
+		package_extract_dir("hydra/debloat/SPlanner", "/system/app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.7") == "1"
+	then
+		ui_print("Installing VideoEditor...");
+		package_extract_dir("hydra/debloat/VideoEditor", "/system/app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.8") == "1"
+	then
+		ui_print("Installing Weather...");
+		package_extract_dir("hydra/debloat/Weather", "/system/app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.9") == "1"
+	then
+		ui_print("Installing Calculator...");
+		package_extract_dir("hydra/debloat/Calculator", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.10") == "1"
+	then
+		ui_print("Installing Email...");
+		package_extract_dir("hydra/debloat/Email", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.11") == "1"
+	then
+		ui_print("Installing GalaxyAppStore...");
+		package_extract_dir("hydra/debloat/GalaxyStore", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.12") == "1"
+	then
+		ui_print("Installing Gallery...");
+		package_extract_dir("hydra/debloat/Gallery", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.13") == "1"
+	then
+		ui_print("Installing GameTools...");
+		package_extract_dir("hydra/debloat/Game", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.14") == "1"
+	then
+		ui_print("Installing MyFiles...");
+		package_extract_dir("hydra/debloat/MyFiles", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.15") == "1"
+	then
+		ui_print("Installing Shealth...");
+		package_extract_dir("hydra/debloat/SHealth", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.16") == "1"
+	then
+		ui_print("Installing SVoice...");
+		package_extract_dir("hydra/debloat/SVoice", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.17") == "1"
+	then
+		ui_print("Installing Themestore...");
+		package_extract_dir("hydra/debloat/Themestore", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.18") == "1"
+	then
+		ui_print("Installing VoiceNote...");
+		package_extract_dir("hydra/debloat/VoiceNote", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.19") == "1"
+	then
+		ui_print("Installing SmartSwitch...");
+		package_extract_dir("hydra/debloat/SmartSwitch", "/system/preload");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.20") == "1"
+	then
+		ui_print("Installing Gear...");
+		package_extract_dir("hydra/debloat/Gear", "/system");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.21") == "1"
+	then
+		ui_print("Installing Excel...");
+		package_extract_dir("hydra/debloat/Excel", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.22") == "1"
+	then
+		ui_print("Installing PowerPoint...");
+		package_extract_dir("hydra/debloat/PowerPoint", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.23") == "1"
+	then
+		ui_print("Installing Word...");
+		package_extract_dir("hydra/debloat/Word", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.24") == "1"
+	then
+		ui_print("Installing Samsung Pay...");
+		package_extract_dir("hydra/debloat/SamsungPay", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.25") == "1"
+	then
+		ui_print("Installing Samsung Music App...");
+		package_extract_dir("hydra/debloat/Samsung_Music", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.26") == "1"
+	then
+		ui_print("Installing Samsung OneDrive...");
+		package_extract_dir("hydra/debloat/OneDrive", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.1.27") == "1"
+	then
+		ui_print("Installing Samsung OneNote...");
+		package_extract_dir("hydra/debloat/OneNote", "/system/app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.2.1") == "1"
+	then
+		ui_print("Installing Google Now...");
+		package_extract_dir("hydra/debloat/Google", "/system/priv-app");
+endif;
+if
+	file_getprop("/tmp/aroma/checkbox1.prop","item.2.2") == "1"
+	then
+		ui_print("Installing AndroidPay...");
+		package_extract_dir("hydra/debloat/AndroidPay", "/system/app");
+endif;
 #DATA
 ui_print("Extracting data..."); ui_print(" ");
 package_extract_dir("data", "/data");

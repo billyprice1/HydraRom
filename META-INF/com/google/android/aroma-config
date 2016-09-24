@@ -366,6 +366,8 @@ checkbox(
 	"Microsoft Word",	"",									0,	#-- item.1.23
 	"Samsung Pay",		"",									0,	#-- item.1.24
 	"Samsung Music Player",	"",									1,	#-- item.1.25
+	"Samsung OneDrive",	"",									0,	#-- item.1.26
+	"Samsung OneNote",	"",									0,	#-- item.1.27
 	"Google Apps",		"",									2,	#-- group 2
 	"Google Now",		"",									0,	#-- item.2.1
 	"Android Pay",		"",									0	#-- item.2.4
