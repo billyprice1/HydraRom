@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-N930F_OXM_EUR_0023</version>
+  <model>
+    <name>SM-N930F</name>
+  </model>
+  <common>
+    <charging>Charge</charging>
+    <networkBearer>All</networkBearer>
+  </common>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0003</customerEdition>
+    <others>yes</others>
+    <othersEdition>ED00002</othersEdition>
+    <cp>no</cp>
+    <language>yes</language>
+    <apps>no</apps>
+    <resources>no</resources>
+    <enforceskippingpackages>yes</enforceskippingpackages>
+    <defaultWorkspace>yes</defaultWorkspace>
+    <defaultApplicationOrder>yes</defaultApplicationOrder>
+  </catalog>
+  <carrierList>
+    <carrierCount>6</carrierCount>
+    <carrier>
+      <mcc>280</mcc>
+      <mnc>10</mnc>
+      <networkName>MTN</networkName>
+    </carrier>
+    <carrier>
+      <mcc>202</mcc>
+      <mnc>10</mnc>
+      <networkName>WIND GR</networkName>
+    </carrier>
+    <carrier>
+      <mcc>202</mcc>
+      <mnc>01</mnc>
+      <networkName>COSMOTE</networkName>
+    </carrier>
+    <carrier>
+      <mcc>202</mcc>
+      <mnc>09</mnc>
+      <networkName>Q Telecom</networkName>
+    </carrier>
+    <carrier>
+      <mcc>202</mcc>
+      <mnc>05</mnc>
+      <networkName>vodafone GR</networkName>
+    </carrier>
+    <carrier>
+      <mcc>280</mcc>
+      <mnc>01</mnc>
+      <networkName>CYTAVODA</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>

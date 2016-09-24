@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-N930F_OXM_NEE_0044</version>
+  <model>
+    <name>SM-N930F</name>
+  </model>
+  <common>
+    <charging>Charge</charging>
+    <networkBearer>All</networkBearer>
+  </common>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0015</customerEdition>
+    <others>yes</others>
+    <othersEdition>ED00009</othersEdition>
+    <cp>no</cp>
+    <language>yes</language>
+    <apps>yes</apps>
+    <resources>no</resources>
+    <enforceskippingpackages>yes</enforceskippingpackages>
+    <defaultWorkspace>yes</defaultWorkspace>
+    <defaultApplicationOrder>yes</defaultApplicationOrder>
+  </catalog>
+  <carrierList>
+    <carrierCount>45</carrierCount>
+    <carrier>
+      <mcc>244</mcc>
+      <mnc>03</mnc>
+      <networkName>DNA</networkName>
+    </carrier>
+    <carrier>
+      <mcc>240</mcc>
+      <mnc>01</mnc>
+      <networkName>S Telia</networkName>
+    </carrier>
+    <carrier>
+      <mcc>238</mcc>
+      <mnc>02</mnc>
+      <networkName>Telenor DK</networkName>
+    </carrier>
+    <carrier>
+      <mcc>244</mcc>
+      <mnc>91</mnc>
+      <networkName>FIN SONERA</networkName>
+    </carrier>
+    <carrier>
+      <mcc>240</mcc>
+      <mnc>01</mnc>
+      <subsetCode>714</subsetCode>
+      <networkName>Halebop</networkName>
+    </carrier>
+    <carrier>
+      <mcc>244</mcc>
+      <mnc>12</mnc>
+      <subsetCode>16</subsetCode>
+      <networkName>DNA Pro</networkName>
+    </carrier>
+    <carrier>
+      <mcc>238</mcc>
+      <mnc>30</mnc>
+      <networkName>TELIA DK</networkName>
+    </carrier>
+    <carrier>
+      <mcc>244</mcc>
+      <mnc>21</mnc>
+      <networkName>Saunalahti</networkName>
+    </carrier>
+    <carrier>
+      <mcc>242</mcc>
+      <mnc>02</mnc>
+      <networkName>Telia N</networkName>
+    </carrier>
+    <carrier>
+      <mcc>238</mcc>
+      <mnc>10</mnc>
+      <networkName>DK TDC</networkName>
+    </carrier>
+    <carrier>
+      <mcc>238</mcc>
+      <mnc>01</mnc>
+      <subsetCode>71</subsetCode>
+      <networkName>TDC Norway</networkName>
+    </carrier>
+    <carrier>
+      <mcc>238</mcc>
+      <mnc>01</mnc>
+      <subsetCode>72</subsetCode>
+      <networkName>TDC Sweden</networkName>
+    </carrier>
+    <carrier>
+      <mcc>274</mcc>
+      <mnc>11</mnc>
+      <networkName>Nova</networkName>
+    </carrier>
+    <carrier>
+      <mcc>242</mcc>
+      <mnc>01</mnc>
+      <networkName>Telenor</networkName>
+    </carrier>
+    <carrier>
+      <mcc>240</mcc>
+      <mnc>07</mnc>
+      <spn>Tele2 Ftg</spn>
+      <subsetCode>06</subsetCode>
+      <networkName>Tele2comviq</networkName>
+    </carrier>
+    <carrier>
+      <mcc>238</mcc>
+      <mnc>20</mnc>
+      <subsetCode>94</subsetCode>
+      <networkName>CallMe &amp; DLG</networkName>
+    </carrier>
+    <carrier>
+      <mcc>244</mcc>
+      <mnc>12</mnc>
+      <subsetCode>400</subsetCode>
+      <networkName>Aina (D)</networkName>
+    </carrier>
+    <carrier>
+      <mcc>901</mcc>
+      <mnc>12</mnc>
+      <networkName>MCP</networkName>
+    </carrier>
+    <carrier>
+      <mcc>290</mcc>
+      <mnc>01</mnc>
+      <networkName>Tele Greenland</networkName>
+    </carrier>
+    <carrier>
+      <mcc>240</mcc>
+      <mnc>10</mnc>
+      <networkName>Spring</networkName>
+    </carrier>
+    <carrier>
+      <mcc>242</mcc>
+      <mnc>08</mnc>
+      <subsetCode>71</subsetCode>
+      <networkName>TDC Norway</networkName>
+    </carrier>
+    <carrier>
+      <mcc>244</mcc>
+      <mnc>12</mnc>
+      <networkName>DNA</networkName>
+    </carrier>
+    <carrier>
+      <mcc>238</mcc>
+      <mnc>01</mnc>
+      <subsetCode>730</subsetCode>
+      <networkName>TDC Finland</networkName>
+    </carrier>
+    <carrier>
+      <mcc>244</mcc>
+      <mnc>91</mnc>
+      <subsetCode>92</subsetCode>
+      <networkName>Aina (S)</networkName>
+    </carrier>
+    <carrier>
+      <mcc>244</mcc>
+      <mnc>12</mnc>
+      <subsetCode>240</subsetCode>
+      <networkName>TDC Finland</networkName>
+    </carrier>
+    <carrier>
+      <mcc>240</mcc>
+      <mnc>07</mnc>
+      <spn>Tele2</spn>
+      <subsetCode>06</subsetCode>
+      <networkName>Tele2comviq</networkName>
+    </carrier>
+    <carrier>
+      <mcc>238</mcc>
+      <mnc>20</mnc>
+      <networkName>TELIA DK</networkName>
+    </carrier>
+    <carrier>
+      <mcc>274</mcc>
+      <mnc>02</mnc>
+      <networkName>Vodafone Iceland</networkName>
+    </carrier>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>01</mnc>
+      <spn>NOVA</spn>
+      <networkName>Nova</networkName>
+    </carrier>
+    <carrier>
+      <mcc>274</mcc>
+      <mnc>12</mnc>
+      <networkName>Tal</networkName>
+    </carrier>
+    <carrier>
+      <mcc>238</mcc>
+      <mnc>01</mnc>
+      <networkName>DK TDC</networkName>
+    </carrier>
+    <carrier>
+      <mcc>242</mcc>
+      <mnc>05</mnc>
+      <networkName>OneCall</networkName>
+    </carrier>
+    <carrier>
+      <mcc>238</mcc>
+      <mnc>77</mnc>
+      <networkName>Telenor DK</networkName>
+    </carrier>
+    <carrier>
+      <mcc>244</mcc>
+      <mnc>05</mnc>
+      <networkName>Elisa</networkName>
+    </carrier>
+    <carrier>
+      <mcc>242</mcc>
+      <mnc>01</mnc>
+      <subsetCode>700</subsetCode>
+      <networkName>Phonero</networkName>
+    </carrier>
+    <carrier>
+      <mcc>240</mcc>
+      <mnc>07</mnc>
+      <subsetCode>68</subsetCode>
+      <networkName>Tele2 No</networkName>
+    </carrier>
+    <carrier>
+      <mcc>238</mcc>
+      <mnc>01</mnc>
+      <subsetCode>381</subsetCode>
+      <networkName>Telmore</networkName>
+    </carrier>
+    <carrier>
+      <mcc>274</mcc>
+      <mnc>01</mnc>
+      <networkName>Siminn</networkName>
+    </carrier>
+    <carrier>
+      <mcc>242</mcc>
+      <mnc>14</mnc>
+      <networkName>ice.net</networkName>
+    </carrier>
+    <carrier>
+      <mcc>238</mcc>
+      <mnc>06</mnc>
+      <networkName>3 DK</networkName>
+    </carrier>
+    <carrier>
+      <mcc>240</mcc>
+      <mnc>02</mnc>
+      <networkName>3 SE</networkName>
+    </carrier>
+    <carrier>
+      <mcc>244</mcc>
+      <mnc>14</mnc>
+      <networkName>Ålcom</networkName>
+    </carrier>
+    <carrier>
+      <mcc>240</mcc>
+      <mnc>14</mnc>
+      <subsetCode>72</subsetCode>
+      <networkName>TDC Sweden</networkName>
+    </carrier>
+    <carrier>
+      <mcc>240</mcc>
+      <mnc>01</mnc>
+      <subsetCode>704</subsetCode>
+      <networkName>Halebop S</networkName>
+    </carrier>
+    <carrier>
+      <mcc>240</mcc>
+      <mnc>08</mnc>
+      <networkName>Telenor SE</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>

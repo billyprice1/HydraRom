@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-N930F_OXM_SEB_0018</version>
+  <model>
+    <name>SM-N930F</name>
+  </model>
+  <common>
+    <charging>Charge</charging>
+    <networkBearer>All</networkBearer>
+  </common>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0004</customerEdition>
+    <others>yes</others>
+    <othersEdition>ED00003</othersEdition>
+    <cp>no</cp>
+    <language>yes</language>
+    <apps>no</apps>
+    <resources>no</resources>
+    <enforceskippingpackages>yes</enforceskippingpackages>
+    <defaultWorkspace>yes</defaultWorkspace>
+    <defaultApplicationOrder>yes</defaultApplicationOrder>
+  </catalog>
+  <carrierList>
+    <carrierCount>9</carrierCount>
+    <carrier>
+      <mcc>248</mcc>
+      <mnc>01</mnc>
+      <networkName>EE EMT</networkName>
+    </carrier>
+    <carrier>
+      <mcc>247</mcc>
+      <mnc>05</mnc>
+      <networkName>LV BITE</networkName>
+    </carrier>
+    <carrier>
+      <mcc>247</mcc>
+      <mnc>01</mnc>
+      <networkName>LMT GSM</networkName>
+    </carrier>
+    <carrier>
+      <mcc>248</mcc>
+      <mnc>02</mnc>
+      <networkName>EE ELISA</networkName>
+    </carrier>
+    <carrier>
+      <mcc>247</mcc>
+      <mnc>02</mnc>
+      <networkName>LV TELE2</networkName>
+    </carrier>
+    <carrier>
+      <mcc>246</mcc>
+      <mnc>02</mnc>
+      <networkName>LT BITE</networkName>
+    </carrier>
+    <carrier>
+      <mcc>246</mcc>
+      <mnc>03</mnc>
+      <networkName>LT TELE2</networkName>
+    </carrier>
+    <carrier>
+      <mcc>248</mcc>
+      <mnc>03</mnc>
+      <networkName>EE TELE2</networkName>
+    </carrier>
+    <carrier>
+      <mcc>246</mcc>
+      <mnc>01</mnc>
+      <networkName>LT Omnitel</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>

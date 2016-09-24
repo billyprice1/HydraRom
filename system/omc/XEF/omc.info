@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-N930F_OXM_XEF_0033</version>
+  <model>
+    <name>SM-N930F</name>
+  </model>
+  <common>
+    <charging>Charge</charging>
+    <networkBearer>All</networkBearer>
+  </common>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0010</customerEdition>
+    <others>yes</others>
+    <othersEdition>ED00006</othersEdition>
+    <cp>no</cp>
+    <language>yes</language>
+    <apps>no</apps>
+    <resources>no</resources>
+    <enforceskippingpackages>yes</enforceskippingpackages>
+    <defaultWorkspace>yes</defaultWorkspace>
+    <defaultApplicationOrder>yes</defaultApplicationOrder>
+  </catalog>
+  <carrierList>
+    <carrierCount>26</carrierCount>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>23</mnc>
+      <codeType>DEC</codeType>
+      <gid>82</gid>
+      <networkName>Virgin (OMEA)</networkName>
+    </carrier>
+    <carrier>
+      <mcc>206</mcc>
+      <mnc>01</mnc>
+      <codeType>DEC</codeType>
+      <gid>82</gid>
+      <networkName>Proximus (Virgin)</networkName>
+    </carrier>
+    <carrier>
+      <mcc>340</mcc>
+      <mnc>01</mnc>
+      <networkName>Orange (340 01)</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>10</mnc>
+      <spn>LPM</spn>
+      <codeType>DEC</codeType>
+      <gid>76</gid>
+      <networkName>La Poste Mobile</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>09</mnc>
+      <spn>NRJ1</spn>
+      <codeType>DEC</codeType>
+      <gid>78</gid>
+      <networkName>NRJ (SFR)</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>09</mnc>
+      <spn>F SFR</spn>
+      <networkName>F SFR</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>10</mnc>
+      <networkName>F SFR</networkName>
+    </carrier>
+    <carrier>
+      <mcc>206</mcc>
+      <mnc>01</mnc>
+      <codeType>DEC</codeType>
+      <gid>78</gid>
+      <networkName>Proximus (NRJ)</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>01</mnc>
+      <networkName>Orange F</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>10</mnc>
+      <codeType>DEC</codeType>
+      <gid>82</gid>
+      <networkName>Virgin</networkName>
+    </carrier>
+    <carrier>
+      <mcc>647</mcc>
+      <mnc>10</mnc>
+      <networkName>SFR RU</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>10</mnc>
+      <spn>NRJ1</spn>
+      <codeType>DEC</codeType>
+      <gid>78</gid>
+      <networkName>NRJ (SFR)</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>17</mnc>
+      <spn>Legos</spn>
+      <networkName>Legos</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>10</mnc>
+      <spn>AE</spn>
+      <subsetCode>16709</subsetCode>
+      <networkName>Leclerc</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>15</mnc>
+      <networkName>Free</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>10</mnc>
+      <codeType>DEC</codeType>
+      <gid>12</gid>
+      <networkName>CORIOLIS</networkName>
+    </carrier>
+    <carrier>
+      <mcc>340</mcc>
+      <mnc>20</mnc>
+      <networkName>Digicel</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>01</mnc>
+      <codeType>DEC</codeType>
+      <gid>51</gid>
+      <networkName>Carrefour</networkName>
+    </carrier>
+    <carrier>
+      <mcc>647</mcc>
+      <mnc>00</mnc>
+      <networkName>Orange (647 00)</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>10</mnc>
+      <subsetCode>255</subsetCode>
+      <networkName>Simplicime</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>26</mnc>
+      <spn>NRJ1</spn>
+      <codeType>DEC</codeType>
+      <gid>78</gid>
+      <networkName>NRJ (FMVNO)</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>01</mnc>
+      <codeType>DEC</codeType>
+      <gid>78</gid>
+      <networkName>NRJ (ORANGE)</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>11</mnc>
+      <spn>F SFR</spn>
+      <networkName>F SFR</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>01</mnc>
+      <codeType>DEC</codeType>
+      <gid>82</gid>
+      <networkName>Virgin Mobile</networkName>
+    </carrier>
+    <carrier>
+      <mcc>208</mcc>
+      <mnc>20</mnc>
+      <networkName>BOUYGTEL</networkName>
+    </carrier>
+    <carrier>
+      <mcc>647</mcc>
+      <mnc>10</mnc>
+      <networkName>CORIOLIS</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>

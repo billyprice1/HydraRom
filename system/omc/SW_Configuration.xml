@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<SW-Configuration>
+    <MobileData>
+        <PublicName>SM-N930F</PublicName>
+    </MobileData>
+    <OmcYn>Y</OmcYn>
+    <MultiCode>OXM</MultiCode>
+    <CustomerDataSet>
+        <CSCName>N930FOXM</CSCName>
+        <CSCVersion>2BPI5</CSCVersion>
+        <NbCustomer>20</NbCustomer>
+        <CustomerData src="/Customer/ATO/customer.xml" />
+        <CustomerData src="/Customer/AUT/customer.xml" />
+        <CustomerData src="/Customer/BGL/customer.xml" />
+        <CustomerData src="/Customer/DBT/customer.xml" />
+        <CustomerData src="/Customer/EUR/customer.xml" />
+        <CustomerData src="/Customer/ITV/customer.xml" />
+        <CustomerData src="/Customer/LUX/customer.xml" />
+        <CustomerData src="/Customer/NEE/customer.xml" />
+        <CustomerData src="/Customer/PHE/customer.xml" />
+        <CustomerData src="/Customer/PHN/customer.xml" />
+        <CustomerData src="/Customer/ROM/customer.xml" />
+        <CustomerData src="/Customer/SEB/customer.xml" />
+        <CustomerData src="/Customer/SEE/customer.xml" />
+        <CustomerData src="/Customer/TPH/customer.xml" />
+        <CustomerData src="/Customer/XEF/customer.xml" />
+        <CustomerData src="/Customer/XEH/customer.xml" />
+        <CustomerData src="/Customer/XEO/customer.xml" />
+        <CustomerData src="/Customer/XEU/customer.xml" />
+        <CustomerData src="/Customer/ORX/customer.xml" />
+        <CustomerData src="/Customer/ETL/customer.xml" />
+    </CustomerDataSet>
+    <OmcInfo>
+        <OmcCode>
+            <CustomerCode>ATO</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_ATO_0043</Version>
+            <Packages>
+                <package name="com.hrs.b2c.android" />
+                <package name="b2b.hrs.android.lib" />
+                <package name="com.goldengekko.edsa.herold" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>AUT</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_AUT_0032</Version>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>BGL</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_BGL_0022</Version>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>DBT</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_DBT_0074</Version>
+            <Packages>
+                <package name="de.samsung.MeinGalaxy" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ETL</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_ETL_0019</Version>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>EUR</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_EUR_0023</Version>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ITV</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_ITV_0057</Version>
+            <Packages>
+                <package name="com.samsung.overmob.mygalaxy" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>LUX</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_LUX_0025</Version>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>NEE</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_NEE_0044</Version>
+            <Packages>
+                <package name="com.samsung.samsungupick" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ORX</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_ORX_0011</Version>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>PHE</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_PHE_0023</Version>
+            <Packages>
+                <package name="samsunges.sclub" />
+                <package name="com.sherpa.asistentesherpaedge" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>PHN</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_PHN_0027</Version>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>ROM</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_ROM_0018</Version>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SEB</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_SEB_0018</Version>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>SEE</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_SEE_0020</Version>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>TPH</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_TPH_0022</Version>
+            <Packages>
+                <package name="pt.impresa.android.reader.expresso" />
+                <package name="pt.publico.android" />
+                <package name="pt.abola.android.stdviewer" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XEF</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_XEF_0033</Version>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XEH</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_XEH_0020</Version>
+            <Packages>
+                <package name="hu.marquardmedia.m_app" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XEO</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_XEO_0041</Version>
+            <Packages>
+                <package name="pl.tvn.playerhd" />
+            </Packages>
+        </OmcCode>
+        <OmcCode>
+            <CustomerCode>XEU</CustomerCode>
+            <Version>SAOMC_SM-N930F_OXM_XEU_0044</Version>
+            <Packages>
+                <package name="com.samsunguk.mygalaxy" />
+            </Packages>
+        </OmcCode>
+    </OmcInfo>
+</SW-Configuration>

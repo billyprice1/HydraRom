@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appList>
+  <appInfo>
+    <package>com.hrs.b2c.android</package>
+    <mandatory>false</mandatory>
+    <downloadType>samsungapps</downloadType>
+  </appInfo>
+  <appInfo>
+    <package>b2b.hrs.android.lib</package>
+    <mandatory>false</mandatory>
+    <downloadType>samsungapps</downloadType>
+  </appInfo>
+  <appInfo>
+    <package>com.goldengekko.edsa.herold</package>
+    <mandatory>false</mandatory>
+    <downloadType>samsungapps</downloadType>
+  </appInfo>
+</appList>

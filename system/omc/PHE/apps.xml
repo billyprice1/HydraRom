@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appList>
+  <appInfo>
+    <package>samsunges.sclub</package>
+    <mandatory>true</mandatory>
+    <downloadType>samsungapps</downloadType>
+  </appInfo>
+  <appInfo>
+    <package>com.sherpa.asistentesherpaedge</package>
+    <mandatory>false</mandatory>
+    <downloadType>samsungapps</downloadType>
+  </appInfo>
+</appList>

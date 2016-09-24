@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-N930F_OXM_PHN_0027</version>
+  <model>
+    <name>SM-N930F</name>
+  </model>
+  <common>
+    <charging>Charge</charging>
+    <networkBearer>All</networkBearer>
+  </common>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0016</customerEdition>
+    <others>yes</others>
+    <othersEdition>ED00007</othersEdition>
+    <cp>no</cp>
+    <language>yes</language>
+    <apps>no</apps>
+    <resources>no</resources>
+    <enforceskippingpackages>yes</enforceskippingpackages>
+    <defaultWorkspace>yes</defaultWorkspace>
+    <defaultApplicationOrder>yes</defaultApplicationOrder>
+  </catalog>
+  <carrierList>
+    <carrierCount>8</carrierCount>
+    <carrier>
+      <mcc>204</mcc>
+      <mnc>08</mnc>
+      <networkName>NL KPN</networkName>
+    </carrier>
+    <carrier>
+      <mcc>204</mcc>
+      <mnc>16</mnc>
+      <networkName>T-Mobile NL</networkName>
+    </carrier>
+    <carrier>
+      <mcc>204</mcc>
+      <mnc>04</mnc>
+      <networkName>vodafone NL</networkName>
+    </carrier>
+    <carrier>
+      <mcc>206</mcc>
+      <mnc>01</mnc>
+      <spn>Ziggo</spn>
+      <codeType>DEC</codeType>
+      <gid>122</gid>
+      <networkName>Ziggo</networkName>
+    </carrier>
+    <carrier>
+      <mcc>204</mcc>
+      <mnc>02</mnc>
+      <spn>Tele2</spn>
+      <networkName>Tele2</networkName>
+    </carrier>
+    <carrier>
+      <mcc>204</mcc>
+      <mnc>18</mnc>
+      <spn>Ziggo</spn>
+      <codeType>DEC</codeType>
+      <gid>122</gid>
+      <networkName>Ziggo</networkName>
+    </carrier>
+    <carrier>
+      <mcc>240</mcc>
+      <mnc>07</mnc>
+      <spn>Tele2</spn>
+      <codeType>DEC</codeType>
+      <gid>78</gid>
+      <networkName>Tele2</networkName>
+    </carrier>
+    <carrier>
+      <mcc>204</mcc>
+      <mnc>12</mnc>
+      <networkName>NL Telfort</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>

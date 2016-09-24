@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-N930F_OXM_BGL_0022</version>
+  <model>
+    <name>SM-N930F</name>
+  </model>
+  <common>
+    <charging>Charge</charging>
+    <networkBearer>All</networkBearer>
+  </common>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0003</customerEdition>
+    <others>yes</others>
+    <othersEdition>ED00002</othersEdition>
+    <cp>no</cp>
+    <language>yes</language>
+    <apps>no</apps>
+    <resources>no</resources>
+    <enforceskippingpackages>yes</enforceskippingpackages>
+    <defaultWorkspace>yes</defaultWorkspace>
+    <defaultApplicationOrder>yes</defaultApplicationOrder>
+  </catalog>
+  <carrierList>
+    <carrierCount>3</carrierCount>
+    <carrier>
+      <mcc>284</mcc>
+      <mnc>01</mnc>
+      <networkName>Mtel</networkName>
+    </carrier>
+    <carrier>
+      <mcc>284</mcc>
+      <mnc>05</mnc>
+      <networkName>Telenor BG</networkName>
+    </carrier>
+    <carrier>
+      <mcc>284</mcc>
+      <mnc>03</mnc>
+      <networkName>vivacom</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>

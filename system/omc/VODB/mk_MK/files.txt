@@ -1,0 +1,3 @@
+mk_MK-ak-cur.lite.res	c294abf28193c52706e8722216f4dd90	568911
+mk_MK.lang	3bf6b46859c9a748fefd724d54190188	4124
+mk_MK-lk-text.lite.res	c44f7c0e46c89aa054eab56a43b1543b	4419334

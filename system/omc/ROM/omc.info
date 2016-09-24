@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-N930F_OXM_ROM_0018</version>
+  <model>
+    <name>SM-N930F</name>
+  </model>
+  <common>
+    <charging>Charge</charging>
+    <networkBearer>All</networkBearer>
+  </common>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0003</customerEdition>
+    <others>yes</others>
+    <othersEdition>ED00002</othersEdition>
+    <cp>no</cp>
+    <language>yes</language>
+    <apps>no</apps>
+    <resources>no</resources>
+    <enforceskippingpackages>yes</enforceskippingpackages>
+    <defaultWorkspace>yes</defaultWorkspace>
+    <defaultApplicationOrder>yes</defaultApplicationOrder>
+  </catalog>
+  <carrierList>
+    <carrierCount>4</carrierCount>
+    <carrier>
+      <mcc>226</mcc>
+      <mnc>01</mnc>
+      <networkName>Vodafone RO</networkName>
+    </carrier>
+    <carrier>
+      <mcc>226</mcc>
+      <mnc>06</mnc>
+      <networkName>COSMOTE</networkName>
+    </carrier>
+    <carrier>
+      <mcc>226</mcc>
+      <mnc>03</mnc>
+      <networkName>COSMOTE</networkName>
+    </carrier>
+    <carrier>
+      <mcc>226</mcc>
+      <mnc>10</mnc>
+      <networkName>RO Orange</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>

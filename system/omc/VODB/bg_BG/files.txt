@@ -1,0 +1,3 @@
+bg_BG-ak-cur.lite.res	0cd65959f0d339927304b678bd0168ed	566335
+bg_BG.lang	9c3e4e60f46a2f6eaa6e3674fb587a79	4094
+bg_BG-lk-text.lite.res	da5b0d7d797a0a0744acac9ea452aa36	5475702

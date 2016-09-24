@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-N930F_OXM_ORX_0011</version>
+  <model>
+    <name>SM-N930F</name>
+  </model>
+  <common>
+    <charging>Charge</charging>
+    <networkBearer>All</networkBearer>
+  </common>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0002</customerEdition>
+    <others>yes</others>
+    <othersEdition>ED00004</othersEdition>
+    <cp>no</cp>
+    <language>yes</language>
+    <apps>no</apps>
+    <resources>no</resources>
+    <enforceskippingpackages>yes</enforceskippingpackages>
+    <defaultWorkspace>yes</defaultWorkspace>
+    <defaultApplicationOrder>yes</defaultApplicationOrder>
+  </catalog>
+  <carrierList>
+    <carrierCount>6</carrierCount>
+    <carrier>
+      <mcc>231</mcc>
+      <mnc>01</mnc>
+      <networkName>Orange</networkName>
+    </carrier>
+    <carrier>
+      <mcc>231</mcc>
+      <mnc>03</mnc>
+      <networkName>SWAN</networkName>
+    </carrier>
+    <carrier>
+      <mcc>231</mcc>
+      <mnc>04</mnc>
+      <networkName>T-Mobile SK</networkName>
+    </carrier>
+    <carrier>
+      <mcc>231</mcc>
+      <mnc>02</mnc>
+      <networkName>T-Mobile SK</networkName>
+    </carrier>
+    <carrier>
+      <mcc>231</mcc>
+      <mnc>06</mnc>
+      <networkName>O2 - SK</networkName>
+    </carrier>
+    <carrier>
+      <mcc>231</mcc>
+      <mnc>05</mnc>
+      <networkName>Orange</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>

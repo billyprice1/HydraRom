@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appList>
+  <appInfo>
+    <package>com.samsung.samsungupick</package>
+    <mandatory>true</mandatory>
+    <downloadType>samsungapps</downloadType>
+  </appInfo>
+</appList>

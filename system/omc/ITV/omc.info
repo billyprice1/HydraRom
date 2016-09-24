@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-N930F_OXM_ITV_0057</version>
+  <model>
+    <name>SM-N930F</name>
+  </model>
+  <common>
+    <charging>Charge</charging>
+    <networkBearer>All</networkBearer>
+  </common>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0008</customerEdition>
+    <others>yes</others>
+    <othersEdition>ED00009</othersEdition>
+    <cp>no</cp>
+    <language>yes</language>
+    <apps>yes</apps>
+    <resources>no</resources>
+    <enforceskippingpackages>yes</enforceskippingpackages>
+    <defaultWorkspace>yes</defaultWorkspace>
+    <defaultApplicationOrder>yes</defaultApplicationOrder>
+  </catalog>
+  <carrierList>
+    <carrierCount>12</carrierCount>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>34</mnc>
+      <networkName>British Telecom</networkName>
+    </carrier>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>01</mnc>
+      <spn>COOP ¡OBILE</spn>
+      <networkName>CoopVoce2</networkName>
+    </carrier>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>01</mnc>
+      <spn>COOP</spn>
+      <networkName>CoopVoce1</networkName>
+    </carrier>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>88</mnc>
+      <networkName>WIND</networkName>
+    </carrier>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>99</mnc>
+      <spn>FASTWEB</spn>
+      <subsetCode>800</subsetCode>
+      <networkName>FASTWEB</networkName>
+    </carrier>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>10</mnc>
+      <networkName>Vodafone</networkName>
+    </carrier>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>99</mnc>
+      <networkName>H3G</networkName>
+    </carrier>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>01</mnc>
+      <spn>COOP MOBILE</spn>
+      <networkName>CoopVoce3</networkName>
+    </carrier>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>01</mnc>
+      <networkName>TIM</networkName>
+    </carrier>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>01</mnc>
+      <spn>BT Enia</spn>
+      <networkName>BTEnia</networkName>
+    </carrier>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>01</mnc>
+      <spn>BT Italia</spn>
+      <networkName>BTItalia</networkName>
+    </carrier>
+    <carrier>
+      <mcc>222</mcc>
+      <mnc>33</mnc>
+      <networkName>Poste Mobile</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>

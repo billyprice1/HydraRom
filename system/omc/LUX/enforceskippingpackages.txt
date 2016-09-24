@@ -1,0 +1,14 @@
+13
+FBAppManager.apk
+FBInstaller.apk
+FBAppManager_NS.apk
+FBInstaller_NS.apk
+FBInstagram_stub.apk
+FBMessenger_stub.apk
+Facebook_stub.apk
+NaverV.apk
+CnnPanel.apk
+AxelSpringer.apk
+AndroidPay.apk
+SamsungPayStub.apk
+Chat.apk

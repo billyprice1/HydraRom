@@ -1,0 +1,3 @@
+el_GR-ak-cur.lite.res	a019f8ee497df0d24a8464b5da9a678f	577595
+el_GR.lang	41439d369f61ae09832a48073f2749d9	4094
+el_GR-lk-text.lite.res	51f594ae203ebf1e857b7c00688a58e7	6086278

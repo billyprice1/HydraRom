@@ -1,0 +1,3 @@
+sr_Latn_RS-ak-cur.lite.res	946de3e3d4f1c8015a3cd6d23780cd2f	499463
+sr_Latn_RS-lk-text.lite.res	a8546cba6899976001bd72d61633d411	6102522
+sr_RS.lang	33ac4959eb3b475635fe53e8062a566c	4215

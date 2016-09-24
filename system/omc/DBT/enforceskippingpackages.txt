@@ -1,0 +1,9 @@
+8
+NaverV.apk
+CnnPanel.apk
+FlipboardBriefing_Grace.apk
+CatchFavorites_M.apk
+AndroidPay.apk
+GalaxyCare.apk
+SamsungPayStub.apk
+Chat.apk

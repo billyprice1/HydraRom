@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appList>
+  <appInfo>
+    <package>pt.impresa.android.reader.expresso</package>
+    <mandatory>false</mandatory>
+    <downloadType>samsungapps</downloadType>
+  </appInfo>
+  <appInfo>
+    <package>pt.publico.android</package>
+    <mandatory>false</mandatory>
+    <downloadType>samsungapps</downloadType>
+  </appInfo>
+  <appInfo>
+    <package>pt.abola.android.stdviewer</package>
+    <mandatory>false</mandatory>
+    <downloadType>samsungapps</downloadType>
+  </appInfo>
+</appList>

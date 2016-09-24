@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-N930F_OXM_DBT_0074</version>
+  <model>
+    <name>SM-N930F</name>
+  </model>
+  <common>
+    <charging>Charge</charging>
+    <networkBearer>All</networkBearer>
+  </common>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0019</customerEdition>
+    <others>yes</others>
+    <othersEdition>ED00015</othersEdition>
+    <cp>no</cp>
+    <language>yes</language>
+    <apps>yes</apps>
+    <resources>no</resources>
+    <enforceskippingpackages>yes</enforceskippingpackages>
+    <defaultWorkspace>yes</defaultWorkspace>
+    <defaultApplicationOrder>yes</defaultApplicationOrder>
+  </catalog>
+  <carrierList>
+    <carrierCount>4</carrierCount>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>01</mnc>
+      <networkName>Telekom.de</networkName>
+    </carrier>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>03</mnc>
+      <networkName>E-Plus</networkName>
+    </carrier>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>07</mnc>
+      <networkName>o2 - de</networkName>
+    </carrier>
+    <carrier>
+      <mcc>262</mcc>
+      <mnc>02</mnc>
+      <networkName>Vodafone.de</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>

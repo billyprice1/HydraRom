@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omcInfo>
+  <contentType>0</contentType>
+  <version>SAOMC_SM-N930F_OXM_TPH_0022</version>
+  <model>
+    <name>SM-N930F</name>
+  </model>
+  <common>
+    <charging>Charge</charging>
+    <networkBearer>All</networkBearer>
+  </common>
+  <catalog>
+    <customer>yes</customer>
+    <customerEdition>ED0007</customerEdition>
+    <others>yes</others>
+    <othersEdition>ED00004</othersEdition>
+    <cp>no</cp>
+    <language>yes</language>
+    <apps>yes</apps>
+    <resources>no</resources>
+    <enforceskippingpackages>yes</enforceskippingpackages>
+    <defaultWorkspace>yes</defaultWorkspace>
+    <defaultApplicationOrder>yes</defaultApplicationOrder>
+  </catalog>
+  <carrierList>
+    <carrierCount>3</carrierCount>
+    <carrier>
+      <mcc>268</mcc>
+      <mnc>06</mnc>
+      <networkName>P TMN</networkName>
+    </carrier>
+    <carrier>
+      <mcc>268</mcc>
+      <mnc>03</mnc>
+      <networkName>P Optimus</networkName>
+    </carrier>
+    <carrier>
+      <mcc>268</mcc>
+      <mnc>01</mnc>
+      <networkName>vodafone P</networkName>
+    </carrier>
+  </carrierList>
+</omcInfo>
