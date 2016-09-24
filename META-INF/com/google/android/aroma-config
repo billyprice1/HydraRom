@@ -287,10 +287,40 @@ form(
 	"v4a",		"Viper4Android","Installs Viper4Android (APK needs to be installed seperately!",	"check"
 );
 
+##
+# Emoji
+#
+
+selectbox(
+  #-- Title
+	"Emojis",
+	  
+  #-- Sub Title
+    "Do you want to install the IOS or stock Emojis in keyboard?",
+	  
+  #-- Icon:
+     "icons/install2",
+	 
+  #-- Will be saved in /tmp/aroma/window6.prop
+	"emoji.prop",
+
+  
+	  #----------------------------------[ Selectbox With Groups ]-----------------------------------#
+	  # TITLE            |  SUBTITLE                                                 | Initial Value #
+	  #------------------+-----------------------------------------------------------+---------------#  
+
+	"Select which Icons you want",			"",					2,	#-- Group 1. key = "selected.1"
+	"Install stock emoji",		"Will display stock emojis in keyboard",		1,	#-- selected.1 = 1
+	"Install IOS 10 emojis",	"Will install different IOS emojis in keyboard",	0       #-- selected.1 = 2
+	  
+	  #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
+
+);
+
 alert( "Alert", "Removing samsung apps can lead to force closes and not working features!");
 
 ##
-# Sub Checkbox 1
+# Debloat
 #
 
 checkbox(
